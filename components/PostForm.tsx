@@ -87,10 +87,13 @@ function PostForm() {
         </div>
         {/** preview */}
         {preview && (
-          <div className="mt-3">
+          <div className="mt-3 ">
             <Image
               src={preview}
               alt="preview"
+              height={200}
+              width={200}
+              layout="responsive"
               className="w-full object-cover"
             />
           </div>

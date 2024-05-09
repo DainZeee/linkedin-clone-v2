@@ -7,7 +7,7 @@ import { Post } from "@/mongodb/models/post";
 import { SignedIn } from "@clerk/nextjs";
 
 export default async function Home() {
-  await connectDB();
+  await connectDB()
   const posts = await Post.getAllPosts();
 
   return (
@@ -18,8 +18,7 @@ export default async function Home() {
 
       <section
         className="col-span-full md:col-span-6 xl:col-span-4 xl-max-2-xl
-       mx-auto w-full"
-      >
+       mx-auto w-full">
         <SignedIn>
           <PostForm />
         </SignedIn>

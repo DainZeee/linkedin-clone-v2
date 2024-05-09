@@ -29,6 +29,16 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'vercel.app',
           },
+          {
+            protocol: 'https',
+            hostname: 'linkedinmattyd.blob.core.windows.net',
+            
+          },
+          {
+            protocol: 'http',
+            hostname: 'linkedinmattyd.blob.core.windows.net',
+            
+          },
         ],
       },
 };
